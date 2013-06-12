@@ -11,7 +11,7 @@ class ProjectController {
     }
     def auth() {
         if(!session.user) {
-            redirect(controller:"EndUser", action:"login")
+            redirect(controller:"Login", action:"login")
             return false
         }
     }
